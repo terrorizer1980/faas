@@ -12,7 +12,7 @@ COPY handler.go .
 
 RUN go install
 
-FROM alpine:3.11
+FROM alpine:latest
 
 COPY --from=watchdog /fwatchdog /usr/bin/fwatchdog
 RUN chmod +x /usr/bin/fwatchdog
