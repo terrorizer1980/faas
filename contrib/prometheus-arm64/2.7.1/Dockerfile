@@ -1,4 +1,4 @@
-FROM alpine:3.9
+FROM alpine:3.11.12
 WORKDIR /root/
 
 RUN apk add --update libarchive-tools curl \
