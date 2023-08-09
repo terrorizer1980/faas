@@ -1,4 +1,4 @@
-FROM docker:dind
+FROM docker:24.0.5-dind-alpine3.18
 WORKDIR /root/
 RUN apk --no-cache add git && \
   git clone https://github.com/openfaas/faas
