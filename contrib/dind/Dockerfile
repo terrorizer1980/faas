@@ -1,4 +1,4 @@
-FROM docker:dind
+FROM docker:27.2
 WORKDIR /root/
 RUN apk --no-cache add git && \
   git clone https://github.com/openfaas/faas
